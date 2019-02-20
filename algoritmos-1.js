@@ -11,6 +11,7 @@ var Stack = (function() {
   function pop() {
     if ( position > 0 ) {
       let value = elements[position];
+      position --;
       elements[position] = undefined;
       return value;
     }
